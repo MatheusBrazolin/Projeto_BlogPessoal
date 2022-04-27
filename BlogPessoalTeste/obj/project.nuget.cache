@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GBCM7LCK41rCAGRTgFssNiYaJJ025h0FuVBHV/lVYPSrZcR87Dx98EM7MGQHqB5/mCK90pczh/07LfAPYYkqXQ==",
+  "dgSpecHash": "N3AW+CQNUn7FLjr8kYygHHTvHV4MoytlETuJMN48sUYppWR3OavAJm65smhp+hV77OumSTz8fk6u2pyE4VaH6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

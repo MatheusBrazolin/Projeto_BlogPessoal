@@ -8556,8 +8556,8 @@
     },
     "BlogPessoal/1.0.0": {
       "type": "project",
-      "path": "../BlogPessoal.csproj",
-      "msbuildProject": "../BlogPessoal.csproj"
+      "path": "../BlogPessoal/BlogPessoal.csproj",
+      "msbuildProject": "../BlogPessoal/BlogPessoal.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8577,11 +8577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
       "projectName": "BlogPessoalTeste",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoal\\BlogPessoalTeste\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Curso Generation\\BPvs\\BlogPessoal\\BlogPessoalTeste\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
