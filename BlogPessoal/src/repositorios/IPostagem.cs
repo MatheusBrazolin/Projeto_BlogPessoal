@@ -1,5 +1,7 @@
-﻿using BlogPessoal.src.modelos;
+﻿using BlogPessoal.src.dtos;
+using BlogPessoal.src.modelos;
 using System.Collections.Generic;
+using static BlogPessoal.src.dtos.NovaPostagemDTO;
 
 namespace BlogPessoal.src.repositorios
 {

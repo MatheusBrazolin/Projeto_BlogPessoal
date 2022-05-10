@@ -7,7 +7,7 @@ namespace BlogPessoal.src.data
     {
         private object opt;
 
-        public DbSet<UsuarioModelo> Usuario { get; set; }
+        public DbSet<UsuarioModelo> Usuarios { get; set; }
         public DbSet<TemaModelo> Temas { get; set; }
         public DbSet<PostagemModelo> Postagens { get; set; }
 
