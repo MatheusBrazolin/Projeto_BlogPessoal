@@ -11,6 +11,12 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace BlogPessoal.src.servicos.implementacoes
 {
+    /// <summary>
+    /// <para>Resumo: Classe responsavel por implementar IAutenticacao</para>
+    /// <para>Criado por: Matheus Brazolin</para>
+    /// <para>Versão: 1.0</para>
+    /// <para>Data: 12/05/2022</para>
+    /// </summary>
     public class AutenticacaoServicos : IAutenticacao
     {
         #region Atributos
@@ -26,11 +32,21 @@ namespace BlogPessoal.src.servicos.implementacoes
         }
         #endregion Construtores
         #region Métodos
+        /// <summary>
+        /// <para>Resumo: Método responsavel por criptografar senha</para>
+        /// </summary>
+        /// <param name="senha">Senha a ser criptografada</param>
+        /// <returns>string</returns>
         public string CodificarSenha(string senha)
         {
             var bytes = Encoding.UTF8.GetBytes(senha);
             return Convert.ToBase64String(bytes);
         }
+
+        /// <summary>
+        /// <para>Resumo: Método assíncrono responsavel por criar usuario sem duplicar no banco</para>
+        /// </summary>
+        /// <param name="dto">NovoUsuarioDTO</param>
         public async Task CriarUsuarioSemDuplicarAsync(NovoUsuarioDTO dto)
         {
             var usuario = await _repositorio.PegarUsuarioPeloEmailAsync(dto.Email);
@@ -38,6 +54,12 @@ namespace BlogPessoal.src.servicos.implementacoes
             dto.Senha = CodificarSenha(dto.Senha);
             await _repositorio.NovoUsuarioAsync(dto);
         }
+
+        /// <summary>
+        /// <para>Resumo: Método responsavel por gerar token JWT</para>
+        /// </summary>
+        /// <param name="usuario">UsuarioModelo</param>
+        /// <returns>string</returns>
 
         public string GerarToken(UsuarioModelo usuario)
         {
@@ -60,7 +82,14 @@ namespace BlogPessoal.src.servicos.implementacoes
             var token = tokenManipulador.CreateToken(tokenDescricao);
             return tokenManipulador.WriteToken(token);
         }
-    
+
+        /// <summary>
+        /// <para>Resumo: Método assíncrono responsavel devolver autorização para usuario autenticado</para>
+        /// </summary>
+        /// <param name="dto">AutenticarDTO</param>
+        /// <returns>AutorizacaoDTO</returns>
+        /// <exception cref="Exception">Usuário não encontrado</exception>
+        /// <exception cref="Exception">Senha incorreta</exception>
         public async Task<AutorizacaoDTO> PegarAutorizacaoAsync(AutenticarDTO dto)
         {
             var usuario = await _repositorio.PegarUsuarioPeloEmailAsync(dto.Email);

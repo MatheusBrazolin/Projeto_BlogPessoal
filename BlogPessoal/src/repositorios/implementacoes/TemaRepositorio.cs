@@ -49,7 +49,7 @@ namespace BlogPessoal.src.repositorios.implementacoes
             await _contexto.SaveChangesAsync();
         }
 
-        public async Task<List<TemaModelo>> PegarTemasPelaDescricaoAsync(string descricao)
+        public async Task<List<TemaModelo>> PegarTemaPelaDescricaoAsync(string descricao)
         {
             return await _contexto.Temas
             .Where(u => u.Descricao.Contains(descricao))
@@ -64,6 +64,6 @@ namespace BlogPessoal.src.repositorios.implementacoes
         {
             return await _contexto.Temas.FirstOrDefaultAsync(t => t.Id == id);
         }
-        #endregion Metodos
+        #endregion
     }
 }

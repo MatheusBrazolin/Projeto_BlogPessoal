@@ -2,7 +2,6 @@
 using BlogPessoal.src.repositorios;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using static BlogPessoal.src.dtos.NovaPostagemDTO;
 
 namespace BlogPessoal.src.controladores
 {

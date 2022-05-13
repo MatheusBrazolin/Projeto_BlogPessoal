@@ -2,7 +2,6 @@
 using BlogPessoal.src.modelos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using static BlogPessoal.src.dtos.NovaPostagemDTO;
 
 namespace BlogPessoal.src.repositorios
 {
@@ -17,9 +16,9 @@ namespace BlogPessoal.src.repositorios
         Task NovaPostagemAsync(NovaPostagemDTO postagem);
         Task AtualizarPostagemAsync(AtualizarPostagemDTO postagem);
         Task DeletarPostagemAsync(int id);
-        Task<TemaModelo> PegarPostagemPeloIdAsync(int id);
-        Task<List<TemaModelo>> PegarTodasPostagensAsync();
-        Task<List<TemaModelo>> PegarPostagensPorPesquisaAsync(string titulo, string descricaoTema, string nomeCriador);
+        Task<PostagemModelo> PegarPostagemPeloIdAsync(int id);
+        Task<List<PostagemModelo>> PegarTodasPostagensAsync();
+        Task<List<PostagemModelo>> PegarPostagensPorPesquisaAsync(string titulo, string descricaoTema, string nomeCriador);
 
 
     }
