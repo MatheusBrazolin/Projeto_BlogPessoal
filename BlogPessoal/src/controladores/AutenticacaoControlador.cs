@@ -27,7 +27,7 @@ namespace BlogPessoal.src.controladores
             if (!ModelState.IsValid) return BadRequest();
             try
             {
-                var autorizacao = _servicos.PegarAutorizacao(autenticacao);
+                var autorizacao = _servicos.PegarAutorizacaoAsync(autenticacao);
                 return Ok(autorizacao);
             }
             catch (Exception ex)

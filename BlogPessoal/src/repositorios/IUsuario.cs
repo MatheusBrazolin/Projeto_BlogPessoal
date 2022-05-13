@@ -7,7 +7,7 @@ namespace BlogPessoal.src.repositorios
 {
     /// <summary>
     /// <para>resumo:Responsavel por representar açoes de CRUD de usuario</para>
-    /// <para>criado por: Matheus Brazolin
+    /// <para>criado por: Matheus Brazolin</para>
     /// <para>Versão: 1.0</para>
     /// <para>Data: 29/04/2022</para>
     /// </summary>
