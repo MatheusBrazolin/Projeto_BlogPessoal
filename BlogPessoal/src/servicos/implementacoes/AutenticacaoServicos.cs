@@ -31,6 +31,7 @@ namespace BlogPessoal.src.servicos.implementacoes
             Configuracao = configuration;
         }
         #endregion Construtores
+        
         #region Métodos
         /// <summary>
         /// <para>Resumo: Método responsavel por criptografar senha</para>
@@ -68,11 +69,11 @@ namespace BlogPessoal.src.servicos.implementacoes
             var tokenDescricao = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(
-            new Claim[]
-            {
-                new Claim(ClaimTypes.Email, usuario.Email.ToString()),
-                new Claim(ClaimTypes.Role, usuario.Tipo.ToString())
-            }),
+                new Claim[]
+                {
+                    new Claim(ClaimTypes.Email, usuario.Email.ToString()),
+                    new Claim(ClaimTypes.Role, usuario.Tipo.ToString())
+                }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(chave),

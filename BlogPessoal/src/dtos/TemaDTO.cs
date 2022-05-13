@@ -8,7 +8,6 @@ namespace BlogPessoal.src.dtos
     /// <para>Versão: 1.0</para>
     /// <para>Data: 29/04/2022</para>
     /// </summary>
-
     public class NovoTemaDTO
     {
         [Required, StringLength(20)]
@@ -18,13 +17,13 @@ namespace BlogPessoal.src.dtos
             Descricao = descricao;
         }
     }
+
     /// <summary>
     /// <para>Resumo: Classe espelho para alterar um tema</para>
     /// <para>Criado por: Matheus Brazolin</para>
     /// <para>Versão: 1.0</para>
     /// <para>Data: 29/04/2022</para>
     /// </summary>
-
     public class AtualizarTemaDTO
     {
         [Required]

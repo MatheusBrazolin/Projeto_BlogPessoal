@@ -20,8 +20,7 @@ namespace BlogPessoal.src.dtos
         public string Email { get; set; }
         public TipoUsuario Tipo { get; set; }
         public string Token { get; set; }
-        public AutorizacaoDTO(int id, string email, TipoUsuario tipo, string
-        token)
+        public AutorizacaoDTO(int id, string email, TipoUsuario tipo, string token)
         {
             Id = id;
             Email = email;

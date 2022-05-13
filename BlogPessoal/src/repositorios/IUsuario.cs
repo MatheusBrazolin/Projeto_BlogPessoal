@@ -19,6 +19,5 @@ namespace BlogPessoal.src.repositorios
         Task<UsuarioModelo> PegarUsuarioPeloIdAsync(int id);
         Task<UsuarioModelo> PegarUsuarioPeloEmailAsync(string email);
         Task<List<UsuarioModelo>> PegarUsuarioPeloNomeAsync(string nome);
-        
     }
 }

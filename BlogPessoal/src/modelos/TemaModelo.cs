@@ -11,7 +11,6 @@ namespace BlogPessoal.src.modelos
     /// <para>Versão: 1.0</para>
     /// <para>Data: 12/05/2022</para>
     /// </summary>
-    /// 
     [Table("tb_temas")]
     public class TemaModelo
     {
