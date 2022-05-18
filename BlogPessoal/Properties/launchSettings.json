@@ -8,28 +8,21 @@
       "sslPort": 0
     }
   },
-  "profiles": {
-    "IIS Express": {
+      "profiles": {
+      "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-<<<<<<< HEAD
       "launchUrl": "swagger",
-=======
-      "launchUrl": "weatherforecast",
->>>>>>> e2d7a4e8d829268eb6864957c01d0e1f3e0aa580
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+
       }
     },
     "BlogPessoal": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-<<<<<<< HEAD
       "launchUrl": "swagger",
-=======
-      "launchUrl": "weatherforecast",
->>>>>>> e2d7a4e8d829268eb6864957c01d0e1f3e0aa580
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
